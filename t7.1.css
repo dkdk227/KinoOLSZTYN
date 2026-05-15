@@ -647,8 +647,8 @@ input {
 .qrBox{
     position: fixed;
 
-    left: 30px;      /* отступ слева */
-    bottom: 50px;      /* отступ сверху */
+    left: 30px;
+    bottom: 50px;
 
     width: 170px;
     height: 170px;
@@ -668,14 +668,70 @@ input {
 
     z-index: 999;
 
-    text-align: center;
+    transition: 0.3s ease;
 }
 
 .qrBox img{
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     border-radius: 18px;
+}
+
+/* Планшеты */
+@media (max-width: 1024px){
+
+    .qrBox{
+        width: 130px;
+        height: 130px;
+
+        left: 15px;
+        top: 180px;
+    }
+
+}
+
+/* Телефоны */
+@media (max-width: 768px){
+
+    .qrBox{
+        position: fixed;
+
+        width: 90px;
+        height: 90px;
+
+        left: 10px;
+        bottom: 15px;
+        top: auto;
+
+        padding: 8px;
+
+        border-radius: 18px;
+
+        backdrop-filter: blur(10px);
+
+        box-shadow:
+        0 0 15px rgba(180,0,255,0.25),
+        0 0 30px rgba(0,140,255,0.15);
+    }
+
+    .qrBox img{
+        border-radius: 12px;
+    }
+
+}
+
+/* Маленькие телефоны */
+@media (max-width: 480px){
+
+    .qrBox{
+        width: 75px;
+        height: 75px;
+
+        left: 8px;
+        bottom: 10px;
+
+        padding: 6px;
+    }
+
 }
