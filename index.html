@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino | Znajdź swój film</title>
+    <link rel="stylesheet" href="t7.1.css">
+     <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header><h1>🎬 Kino</h1></header>
+
+    <section>
+        <div id="container">
+            <section id="nowPlayingSection">
+                <div id="nowPlayingContainer">
+                    <h2 id="nowPlayingTitle">🎬 Teraz w Olsztyńskich kinach</h2>
+                    <div id="carouselWrapper">
+                        <button id="carouselPrev">‹</button>
+                        <div id="carouselTrack"></div>
+                        <button id="carouselNext">›</button>
+                    </div>
+                </div>
+            </section>
+            <div class="inpt">
+                <div class="search-row">
+                    <input id="searchInput" type="text" placeholder="Szukaj filmu...">
+                    <button id="searchBtn">🔍</button>
+                </div>
+                <div class="controls-row">
+                    <div class="burgers">
+                        <button id="burgerGenres">Gatunek</button>
+                        <button id="burgerYears">Rok</button>
+                        <button id="burgerFilters">Filtr</button>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <button id="tabFavorite">❤️</button>
+                    <button id="tabWatchLater">🕐</button>
+                </div>
+            </div>
+            <div id="filterDropdown" style="display: none;">
+                <button id="filterAll">Wszystko</button>
+                <button id="filterMovies">Filmy</button>
+                <button id="filterTV">Seriale</button>
+            </div>
+            <div id="genreDropdown" style="display: none;"></div>
+            <div id="yearDropdown" style="display: none;"></div>
+            <p id="nameYearOrGenre"></p>
+            <p id="trim"></p>
+            <div id="searchResults"></div>
+            <div class="namemovie">
+                <h2 id="name"></h2>
+                <i><p id="originalName"></p></i>
+            </div>
+            <div id="inf">
+                <div id="infor">
+                    <p><span id="type"></span><br><span id="year"></span><br><span id="genre"></span><br><span id="rating"></span><br><span id="country"></span><br><span id="duration"></span></p>
+                    <p id="plot"></p>
+                    <p id="actors"></p>
+                    <div id="treiler"></div>
+                </div>
+                <div>
+                    <div id="poster"></div>
+                    <div class="FW">
+                        <button id="btnFavorite" style="display: none;">❤️ Ulubione</button>
+                        <button id="btnWatchLater" style="display: none;">🕐 Obejrzyj później</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="qrBox">
+        <img src="https_www_facebook_com_share_1EGaihZ9HV_mibextid_wwXIfr.png" alt="QR Code">
+        <p>Mój Facebook</p>
+    </div>
+    <div id="scrollBtns">
+        <button id="scrollUp">▲</button>
+        <button id="scrollDown">▼</button>
+    </div>
+    <script src="t7.1.js"></script>
+</body>
+</html>
